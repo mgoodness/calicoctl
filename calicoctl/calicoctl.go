@@ -37,6 +37,7 @@ func main() {
     get       Get a resource identified by file, stdin or resource type and
               name.
     convert   Convert config files between different API versions.
+    validate  Validate config files.
     ipam      IP address management.
     node      Calico node management.
     version   Display the version of calicoctl.
@@ -84,6 +85,8 @@ Description:
 			commands.Get(args)
 		case "convert":
 			commands.Convert(args)
+		case "validate":
+			commands.Validate(args)
 		case "version":
 			commands.Version(args)
 		case "node":
